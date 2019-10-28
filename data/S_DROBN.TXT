@@ -1,0 +1,399 @@
+kod;nazwa
+001;proteus mirabilis
+002;proteus penneri
+003;proteus vulgaris
+004;morganella morganii
+005;providencia rettgeri
+006;providencia stuartii
+007;moellerella wisconsensis
+008;tatumella ptyseos
+009;koserella trabulsii
+010;budvicia aquatica
+011;yersinia aldovae
+012;yersinia enterocolitica
+013;yersinia frederiksenii
+014;yersinia intermedia
+015;yersinia kristensenii
+016;yersinia pestis
+017;yersinia pseudotuberculosis
+018;escherichia coli 1
+019;escherichia coli 2
+020;escherichia adecarboxylata
+021;escherichia fergusonii
+022;escherichia hermannii
+023;escherichia vulneris
+024;shigella spp
+025;shigella sonnei
+026;edwardsiella tarda
+027;edwardsiella hoshinae
+028;salmonella arizonae
+029;salmonella choleraesuis
+030;salmonella paratyphi a
+031;salmonella typhi
+032;salmonella spp
+033;citrobacter freundii
+034;citrobacter diversus/amalonaticus
+035;klebsiella pneumo. spp pneumoniae
+036;klebsiella pneumo. spp ozaenae
+037;klebsiella pneumo. spp rhinoscleromatis
+038;klebsiella oxytoca
+039;<< klebsiella >> gr. 47
+040;enterobacter aerogenes
+041;enterobacter agglomerans 1
+042;enterobacter agglomerans 2
+043;enterobacter agglomerans 3
+044;enterobacter agglomerans 4
+045;enterobacter agglomerans 5
+046;enterobacter amnigenus 1
+047;enterobacter amnigenus 2
+048;enterobacter cloacae
+049;enterobacter intermedium
+050;enterobacter gergoviae
+051;enterobacter sakazakii
+052;enterobacter taylorae
+053;erwinia spp
+054;erwinia nigrifluens
+055;hafnia alvei 1
+056;hafnia alvei 2
+057;rahnella aquatilis
+058;cedecea davisae
+059;cedecea lapagei
+060;cedecea neteri
+061;ewingella americana
+062;serratia liquefaciens
+063;serratia ficaria
+064;serratia fonticola
+065;serratia marcescens
+066;serratia odorifera 1
+067;serratia odorifera 2
+068;serratia plymuthica
+069;serratia rubidaea
+070;buttiauxella agrestis
+071;kluyvera spp
+072;providencia alcalifaciens
+099;inne enterobacteriaceae
+100;pseudomonas aeruginosa
+101;pseudomonas aureofaciens
+102;pseudomonas cepacia
+103;pseudomonas chlororaphis
+104;pseudomonas diminuta
+105;pseudomonas fluorescens
+106;pseudomonas mallei
+107;pseudomonas mendocina
+108;pseudomonas mesophilica
+109;pseudomonas paucimobilis
+110;pseudomonas pickettii
+111;pseudomonas pseudomallei
+112;pseudomonas putida
+113;pseudomonas putrefaciens
+114;pseudomonas stutzeri
+115;pseudomonas vesicularis
+116;comamonas testosteroni / ps. alcaligenes
+117;comamonas acidovorans
+118;xanthomonas maltophilia
+119;chryseomonas luteola
+120;flavimonas oryzihabitans
+121;chromobacterium violaceum
+122;bordetella bronchiseptica
+123;bordetella avium
+124;oligella ureolytica
+125;oligella urethralis
+126;cdc gr. iv c-2
+127;alcaligenes faecalis
+128;alcaligenes xylosoxidans ssp denitrificans
+129;alcaligenes xylosoxidans ssp xylosoxidans
+130;achromobacter cdc gr. vd
+131;agrobacterium radiobacter
+132;flavobacterium breve
+133;flavobacterium indologenes
+134;flavobacterium miningosepticum
+135;flavobacterium odoratum
+136;sphingobacterium multivorum
+137;sphingobacterium spiritivorum
+138;weeksella virosa
+139;weeksella zoohelcum
+140;acinetobacter baumannii
+141;acinetobacter calcoaceticus
+142;acinetobacter haemolyticus
+143;acinetobacter johnsonii
+144;acinetobacter junii
+145;acinetobacter lwoffii
+146;moraxella lacunata
+147;moraxella phenylpyruvica
+148;moraxella spp
+149;pasteurella aerogenes
+150;pasteurella haemolytica
+151;pasteurella multocida
+152;pasteurella pneumotropica
+153;pasteurella spp
+154;aeromonas hydrophila / caviae
+155;aeromonas sobria
+156;aeromonas salmonicida salmonicida
+157;aeromonas salmonicida masoucida / achromogenes
+158;plesiomonas shigelloides
+159;vibrio alginolyticus
+160;vibrio cholerae
+161;vibrio damsela
+162;vibrio hollisae
+163;vibrio metschnikovii
+164;vibrio parahaemolyticus
+165;vibrio vulnificus
+199;inne nonenterobacteriaceae
+200;staphylococcus aureus
+201;staphylococcus intermedius
+202;staphylococcus epidermidis
+203;staphylococcus saprophyticus
+204;staphylococcus cohnii
+205;staphylococcus xylosus 1
+206;staphylococcus xylosus 2
+207;staphylococcus haemolyticus 1
+208;staphylococcus haemolyticus 2
+209;staphylococcus haemolyticus 3
+210;staphylococcus hominis 1
+211;staphylococcus hominis 2
+212;staphylococcus hominis 3
+213;staphylococcus warneri
+214;staphylococcus capitis
+215;staphylococcus simulans
+216;staphylococcus hyicus hyicus
+217;staphylococcus hyicus chromo
+218;staphylococcus sciuri
+219;staphylococcus lentus
+220;staphylococcus auricularis
+221;staphylococcus carnosus
+222;micrococcus spp
+223;micrococcus varians / roseus
+224;micrococcus kristinae
+299;inne staphylococcaceae
+300;streptococcus pyogenes
+301;streptococcus agalactiae
+302;streptococcus equisimilis
+303;streptococcus dysgalactiae
+304;streptococcus zooepidemicus
+305;streptococcus equi
+306;streptococcus porcinus
+307;streptococcus canis
+308;streptococcus gr. l
+309;streptococcus salivarius
+310;streptococcus mitis
+311;streptococcus milleri i
+312;streptococcus milleri ii
+313;streptococcus milleri iii
+314;streptococcus mutans
+315;streptococcus sanguis i
+316;streptococcus sanguis ii
+317;streptococcus pneumoniae 1
+318;streptococcus pneumoniae 2
+319;streptococcus suis i
+320;streptococcus suis ii
+321;streptococcus uberis
+322;streptococcus acidominimus
+323;streptococcus bovis i
+324;streptococcus bovis ii/1
+325;streptococcus bovis ii/2
+326;streptococcus equinus
+327;enterococcus faecalis 1
+328;enterococcus faecalis 2
+329;enterococcus faecalis 3
+330;enterococcus faecium 1
+331;enterococcus faecium 2
+332;enterococcus durans
+333;enterococcus avium
+334;enterococcus gallinarum
+335;enterococcus malodoratus
+336;lactococcus lactis
+337;lactococcus cremoris
+338;lactococcus plantarum
+339;aerococcus viridans 1
+340;aerococcus viridans 2
+341;aerococcus viridans 3
+342;gamella haemolysans
+343;gamella morbillorum
+344;gardnerella vaginalis
+345;listeria grayi / murrayi
+346;listeria spp
+394;gr. b paciorkowce beta-hemolityczne
+395;gr. c paciorkowce beta-hemolityczne
+396;gr. d paciorkowce beta-hemolityczne
+397;gr. f paciorkowce beta-hemolityczne
+398;gr. g paciorkowce beta-hemolityczne
+399;inne streptococcaceae
+400;bacteroides asacchrolyticus
+401;bacteroides bivius
+402;bacteroides capillosus
+403;bacteroides corrodens
+404;bacteroides disiens
+405;bacteroides distasonis 1
+406;bacteroides distasonis 2
+407;bacteroides eggerthii
+408;bacteroides fragilis
+409;bacteroides intermedius
+410;bacteroides melaninogenicus
+411;bacteroides oralis
+412;bacteroides ovatus
+413;bacteroides ruminicola brevis
+414;bacteroides rumin. ruminicola
+415;bacteroides thetaiotaomicron
+416;bacteroides uniformis
+417;bacteroides vulgatus
+418;fusobacterium mortiferum
+419;fusobacterium necrophorum
+420;fusobacterium nucleatum
+421;fusobacterium varium
+422;veillonella parvula
+423;peptococcus asaccharolyticus
+424;peptococcus saccharolyticus
+425;peptococcus spp
+426;peptostreptococcus spp
+427;streptococcus intermedius
+428;streptococcus spp
+429;propionibacterium acnes
+430;propionibacterium granulosum
+431;bifidobacterium adolescentis 1
+432;bifidobacterium adolescentis 2
+433;lactobacillus acidophilus
+434;lactobacillus catenaforme
+435;lactobacillus fermentum
+436;lactobacillus jensenii
+437;lactobacillus minutus
+438;eubacterium lentum
+439;eubacterium limosum
+440;actinomyces israelii
+441;actinomyces meyeri
+442;actinomyces naeslundii
+443;actinomyces odontolyticus
+444;actinomyces viscosus
+445;clostridium barati
+446;clostridium bifermentans
+447;clostridium botulinum gr. i
+448;clostridium botulinum gr. ii
+449;clostridium cadaveris
+450;clostridium clostridiiforme
+451;clostridium difficile
+452;clostridium glycolycum
+453;clostridium innocuum
+454;clostridium paraputrificum
+455;clostridium perfringens
+456;clostridium ramosum
+457;clostridium septicum
+458;clostridium sordellii
+459;clostridium sporogenes
+460;clostridium tertium
+461;clostridium beijer./butyricum
+462;clostridium spp
+499;inne beztlenowce
+500;candida albicans 1
+501;candida albicans 2
+502;candida ciferrii
+503;candida colliculosa
+504;candida famata
+505;candida glabrata
+506;candida guilliermondii
+507;candida humicola
+508;candida inconspicua
+509;candida kefyr 1
+510;candida kefyr 2
+511;candida krusei
+512;candida lambica
+513;candida lipolytica
+514;candida lusitaniae
+515;candida magnoliae
+516;candida maris
+517;candida norvegensis
+518;candida parapsilosis
+519;candida pelliculosa
+520;candida rugosa
+521;candida tropicalis 1
+522;candida tropicalis 2
+523;candida zeylanoides
+524;cryptococcus albidus 1
+525;cryptococcus albidus 2
+526;cryptococcus laurentii
+527;cryptococcus neoformans
+528;cryptococcus terreus
+529;cryptococcus uniguttulatus
+530;geotrichum candidum
+531;geotrichum penicillatum
+532;kloeckera apis / apiculata
+533;kloeckera japonica
+534;rhodotorula glutinis
+535;rhodotorula minuta
+536;rhodotorula rubra 1
+537;rhodotorula rubra 2
+538;saccharomyces cerevisiae 1
+539;saccharomyces cerevisiae 2
+540;sporobolomyces salmonicolor
+541;trichosporon cutaneum
+542;trichosporon capitatum
+599;inne fungi
+600;chlamydia trachomatis
+601;chlamydia pneumoniae
+624;inne chlamydia
+625;mycoplasma pneumoniae
+626;mycoplasma hominis
+627;mycoplasma salivarium
+628;mycoplasma orale
+629;ureoplasma spp
+649;inne mycoplasma
+650;corynebacterium aquaticum
+651;corynebacterium bovis
+652;corynebacterium diphtheriae mitis
+653;corynebacterium diphtheriae belfanti
+654;corynebacterium diphtheriae gravis
+655;corynebacterium jeikeium
+656;corynebacterium kutscheri
+657;corynebacterium minutissimum
+658;corynebacterium pilosum
+659;corynebacterium pseudotuberculosis
+660;corynebacterium pseudodiphtheriticum
+661;corynebacterium renale
+662;corynebacterium striatum
+663;corynebacterium ulcerans
+664;corynebacterium xerosis
+665;corynebacterium group a
+666;corynebacterium group anf
+667;corynebacterium group b
+668;corynebacterium group d2
+669;corynebacterium group f
+670;corynebacterium group g 1
+671;corynebacterium group g 2
+672;corynebacterium group i
+673;rhodococcus equi
+674;listeria monocytogens/innocua
+675;listeria grayi/murrayi
+676;oerskovia spp
+677;actinomyces pyogenes
+678;erysipelothrix rhusiopathiae
+679;arcanobacterium haemolyticum
+680;brevibacterium spp
+681;gerdnerella vaginalis
+699;inne corynebacterium
+700;haemophilus influenzae
+701;haemophilus haemolyticus
+702;haemophilus haemoglobinophilus
+703;haemophilus ducreyi
+704;haemophilus parainfluenzae
+705;haemophilus paraaphrophilus
+706;haemophilus aphrophilus
+707;haemophilus segnis
+724;inne haemophilus
+725;mycobacterium spp
+749;inne mycobacterium
+750;legionella pneumophila
+751;legionella micdadei
+774;inne legionella
+800;moraxella catarrhalis
+824;inne moraxella
+825;neisseria spp
+849;inne neisseria
+850;rickettsia spp
+851;coxiella burnetii
+874;inne rickettsia
+875;hav (wirusowe zapalenie w¹troby typu a)
+876;hbv (wirusowe zapalenie w¹troby typu b)
+877;hdv (wirusowe zapalenie w¹troby typu delta)
+878;hcv (wirusowe zapalenie w¹troby typu nie a, nie b)
+879;hev (wirusowe zapalenie w¹troby typu nie a, nie b)
+880;cytomegalowirusy
+881;hiv
+899;inne wirusy

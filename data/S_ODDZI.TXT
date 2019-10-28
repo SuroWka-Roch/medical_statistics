@@ -1,0 +1,17 @@
+kod;nazwa
+*;wszystkie oddzia³y
+chir;kl. chirurgii ogólnej
+lary;laryngologiczny
+nacz;chirurgii naczyñ
+nech;neurochirurgiczny
+nefr;nefrologiczny
+neur;neurologiczny
+oiom;kl. oddzia³ anestezjologii i intensywnej terapii
+okul;okulistyczny
+plas;chirurgii plastycznej
+reum;reumatologiczny
+szcz;chirurgii szczêkowej
+uraz;kl. chirurgii urazowo-ortopedycznej
+urol;urologiczny
+uspr;usprawnienia ruchowego
+wewn;vii kl. chorób wewnêtrznych

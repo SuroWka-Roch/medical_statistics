@@ -1,0 +1,112 @@
+kod;nazwa
+*;Wszystkie leki
+1;amikacin
+10;cefazolina
+100;nuyr
+101;inne penicyliny
+102;inne cefalosporyny
+103;inne aminoglikozydy
+104;inne tetracykliny
+105;inne polimyksyny
+106;inne makrolidy i linkosamidy
+107;inne sulfonamidy
+108;inne monobaktamy
+109;inne
+11;cefotetan
+110;inne fluorochinolony
+111;inne leki przeciwgrzybicze
+112;inne inhibitory beta-laktamaz
+113;inne karbapenemy
+114;inne chloramphenikol
+115;inne glikopeptydy
+116;inne lipopeptydy
+117;inne ryfamycyny
+118;inne nitrofurany
+119;inne chinolony
+12;gentamycin
+120;josamycin
+121;lincomycin
+122;sultamycin (unasyn)
+123;cefradyna (sefril)
+124;cefaclor
+125;inne nitroimidazole
+13;kanamycin
+14;clindamycin
+15;methicillin
+16;nalidixic acid
+17;netilmycin
+18;nitrofurantoin
+19;penicillin g
+2;temocillin
+20;colistin
+21;erythromycin
+22;cefotiam
+23;tobramycin
+24;ceftizoksym
+25;vancomycin
+26;cefodyzym
+27;ampicillin
+28;amoxicillin
+29;augmentin
+3;piperacillin + tazobactam
+30;cefpirome
+31;cefepime
+32;piperacillin
+33;mezlocillin
+34;azlocillin
+35;oxacillin
+36;biapenem
+37;tetracycline
+38;cefotaxime
+39;cefoperazone
+4;cefamandole
+40;ceftriaxone
+41;latamoxef (moksolaktam)
+42;ceftazidime
+43;meropenem
+44;chloramphenikol
+45;cefsulodin
+46;minocycline
+47;azytromycyna
+48;klarytromycyna
+49;roksytromycyna
+5;cefoxitin
+50;neomycin
+51;teikoplanina
+52;daptomycyna
+53;ryfampicyna
+54;ticarcillin
+55;sulphatiazol
+56;norfloxacin
+57;trimethoprim
+58;pipemid acid
+59;carbenicillin 2.5
+6;cefuroxime
+60;carbenicillin 20
+61;fleroxacin
+62;astreonam
+63;metronidazol
+64;inne 1
+65;inne 2
+66;inne 3
+67;inne 4
+68;inne 5
+69;inne 6
+7;sulperazon
+70;ciprofloxacin
+71;doxycycline
+74;imipenem
+76;ofloxacin
+78;pefloxacin
+79;pristinamycin
+8;cefalotyna
+83;timentin
+9;co-trimoxazole (biseptol)
+91;amfoteracyna b
+92;5-fluorocytozyna
+93;ketokonazol
+94;klotrimazol
+95;mikonazol
+96;nystatyna
+97;pimarycyna
+98;tiokonazol

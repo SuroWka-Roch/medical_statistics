@@ -1,0 +1,45 @@
+kod;nazwa
+*;wszystkie materia³y badane
+010;mocz
+020;rana
+021;odle¿yny
+022;ropa
+023;tkanka
+024;przetoka
+030;rurka tracheotomijna lub intubacyjna
+040;krew -- warunki tlenowe
+041;krew -- warunki beztlenowe
+042;krew z inhibitorami antybiotyków
+050;plwocina
+060;gard³o
+061;migda³y
+062;jama ustna
+063;tylna œciana gard³a
+064;gard³o -- inne
+070;nos
+080;worek spojówkowy
+090;¿ó³æ
+100;ucho
+110;p³yn mózgowo-rdzeniowy
+120;pochwa
+130;treœæ ¿o³¹dkowa
+140;p³yn wysiêkowy z jamy op³ucnej
+141;p³yn wysiêkowy z jamy brzusznej
+142;p³yn wysiêkowy z osierdzia
+143;p³yn puchlinowy
+144;p³yn wysiêkowy z drzewa oskrzelowego
+145;p³yn wysiêkowy ze stawu kolanowego
+146;inne p³yny wypiekowe
+150;odbyt
+160;ka³
+170;dren
+175;koñcówka lub cewnik
+180;higiena
+190;koœæ
+191;pracie
+192;sperma
+193;cewka moczowa
+194;szyjka macicy
+195;wykwity skórne
+196;zeskrobiny
+197;inne materia³y
