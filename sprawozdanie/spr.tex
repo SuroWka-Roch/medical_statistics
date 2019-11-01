@@ -1,0 +1,86 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{polski}
+\usepackage{helvet}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[unicode]{hyperref}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{multirow}
+\geometry{hmargin={2cm, 2cm}, height=10.0in}
+
+
+\usepackage{lipsum} 
+\usepackage{indentfirst}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\title{Title}
+\author{Wojciech Surówka}
+
+\begin{document}
+Dane główne:
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{cc}
+\hline
+Liczba pacjętów w bazie: & 6861 \\
+liczba badń w bazie: & 17198 \\
+liczba odnalezionych rodzajów drobnoustrojów & 15553 \\
+Liczba wykonanych badań oporności & 136286  \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Wykonano wstępną obróbkę danych:
+\begin{itemize}
+  \item Uwzględniono obecność pacjęta na wielu oddziałach,
+  \item usunięto powtórzenia w zapisie pacjętów,
+  \item usunięto badania o złym zapisie daty,
+  \item uwzględniono badania w przedziale 1-1-1992 do 31-3-1996 włącznie.
+  \item usunięto dane drobnoustrojstwa niezwiązanego z żadnym badaniem
+  \item usunięto dane oporność niezwiązane z żadnym drobnoustrojstwem
+\end{itemize}
+Po przeprowadzeniu tych działań otrzymano zmienioną wielkość tablic:
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{c|c|c}
+\hline
+Nazwa danych & Nowa ilość & zmiana \\
+Pacjęci & 6852 & 9 \\
+Badania & 16995  & 203\\
+Drobnoustrojstwa & 15421 & 132\\
+Lekooporność & 135220 & 1066 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Na podstawie materiałów (pachwa, sperma) ustalono że w danych pacjęta 1 oznacza mężczyznę a 0 kobietę.
+\end{document}
