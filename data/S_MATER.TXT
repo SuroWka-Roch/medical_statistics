@@ -1,5 +1,4 @@
 kod;nazwa
-*;wszystkie materia³y badane
 010;mocz
 020;rana
 021;odle¿yny

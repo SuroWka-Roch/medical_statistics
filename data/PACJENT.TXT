@@ -1,4 +1,4 @@
-numer;p³eæ;kod oddzia³u
+numer;sex;depName
 1;0;oiom
 2;1;NACZ
 3;0;URAZ

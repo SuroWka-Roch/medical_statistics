@@ -1,4 +1,4 @@
-drobnoustrój id;id badania;kod drobnoustroju
+drobnoustroj id;id badania;kod drobnoustroju
 1;1001;100
 2;1001;035
 3;1001;141
