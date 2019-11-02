@@ -44,14 +44,32 @@
 \author{Wojciech Surówka}
 
 \begin{document}
+
+\begin{table}[t]
+\centering
+\label{my-label}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|c|c|l|l|l|l|}
+\hline
+
+\begin{tabular}[c]{@{}c@{}}Wydział: FiIS\\ Kierunek: FM\end{tabular} & \begin{tabular}[c]{@{}c@{}}Rok: II\\ Zespół: ?\end{tabular} & \multicolumn{4}{l|}{\begin{tabular}[c]{@{}l@{}}Filip Kosiorowki \\ Wojciech Surówka\end{tabular}} \\ \hline
+
+\textbf{\begin{tabular}[c]{@{}c@{}}Statystyka medyczna\end{tabular}} & \multicolumn{5}{l|}{\begin{tabular}[c]{@{}l@{}}Temat:Promieniowanie niejonizujące sieci komórkowej\end{tabular}} \\ \hline
+
+\begin{tabular}[c]{@{}c@{}}Data wykonania:\\ 1.11.2019 r.\end{tabular} & \begin{tabular}[c]{@{}c@{}}Data oddania:\\ 1.11.2019 r.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Zwrot do poprawy:\\\end{tabular} & \begin{tabular}[ct]{@{}l@{}}Data oddania poprawy:\\\end{tabular} & \begin{tabular}[cT]{@{}l@{}}Data zaliczenia:\\\end{tabular} & \begin{tabular}[cT]{@{}l@{}}Ocena:\end{tabular} \\ \hline
+
+\end{tabular}}
+\end{table}
+
 Dane główne:
 \begin{table}[h]
 \begin{center}
+\caption{Główne informacje o bazie danych}
 \begin{tabular}{cc}
 \hline
 Liczba pacjętów w bazie: & 6861 \\
 liczba badń w bazie: & 17198 \\
-liczba odnalezionych rodzajów drobnoustrojów & 15553 \\
+liczba odnalezionych rodzajów & 15553 \\
 Liczba wykonanych badań oporności & 136286  \\
 \hline
 \end{tabular}
@@ -60,16 +78,18 @@ Liczba wykonanych badań oporności & 136286  \\
 
 Wykonano wstępną obróbkę danych:
 \begin{itemize}
-  \item Uwzględniono obecność pacjęta na wielu oddziałach,
-  \item usunięto powtórzenia w zapisie pacjętów,
+  \item Uwzględniono obecność pacjęta na wielu oddziałach (7),
+  \item usunięto powtórzenia w zapisie pacjętów (2), 
   \item usunięto badania o złym zapisie daty,
   \item uwzględniono badania w przedziale 1-1-1992 do 31-3-1996 włącznie.
   \item usunięto dane drobnoustrojstwa niezwiązanego z żadnym badaniem
   \item usunięto dane oporność niezwiązane z żadnym drobnoustrojstwem
 \end{itemize}
+
 Po przeprowadzeniu tych działań otrzymano zmienioną wielkość tablic:
 \begin{table}[h]
 \begin{center}
+\caption{Zmiany wielkości danych po wstępnej filtracji}
 \begin{tabular}{c|c|c}
 \hline
 Nazwa danych & Nowa ilość & zmiana \\
@@ -91,5 +111,204 @@ Wykryto 178 różnych drobnoustrojów.
 Testowano 78 różnych leków.
 
 W 8 polach pacjętów nie podano nazwy oddziału oraz nazwy wydziału są podawane wymiennie z małej i dużej litery.
+W celu unifikacji wszelkie wydziały z małej litery zapisano w samych dużych literach.
+
+Wyniki z wstempnego szacowania umieszczono w tabelach poniżej.
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Typ pacjętów &  co najmniej jedno badanie  & co najmniej jeden drobnoustrój \\
+\hline
+Wszyscy & 6746 &5189\\
+kobiety  & 3165  & 2428\\
+Mężczyżni & 3581 & 2761\\ \hline
+\multicolumn{3}{|c|}{Rok 1992} \\ \hline
+Wszyscy & 2150 &1599\\
+kobiety  & 958  & 698\\
+Mężczyżni & 1192 & 901\\ \hline
+\multicolumn{3}{|c|}{Rok 1993} \\ \hline
+Wszyscy & 1367 &1282\\
+kobiety  & 690  & 630\\
+Mężczyżni & 677 & 652\\ \hline
+\multicolumn{3}{|c|}{Rok 1994} \\ \hline
+Wszyscy & 1350 &1173\\
+kobiety  & 646  & 563\\
+Mężczyżni & 704 & 610\\ \hline
+\multicolumn{3}{|c|}{Rok 1995} \\ \hline
+Wszyscy & 1864 &1254\\
+kobiety  & 888  & 613\\
+Mężczyżni & 976 & 641\\ \hline
+\multicolumn{3}{|c|}{Rok 1996} \\ \hline
+Wszyscy & 559 &405\\
+kobiety  & 258  & 191\\
+Mężczyżni & 301 & 214\\ \hline
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h]
+\begin{center}
+\caption{"Wykaz badań dla wszystkich oddziałów"}
+\begin{tabular}{c|c|c}
+\hline
+Rok badań & Ilość badań & Ilość badań \\
+& z przynajmniej jednym drobnoustrojem &z testem lekooporności \\
+1992&5106&2327 \\
+1993&3097&1992 \\
+1994&3186&2120 \\
+1995&4346&2126 \\
+1996&1260&704 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h]
+\begin{center}
+\caption{"Wykaz badań dla poszczególnych oddziałów"}
+\begin{tabular}{c|c|c}
+\hline
+Rok badań & Ilość badań & Ilość badań \\
+& z przynajmniej jednym drobnoustrojem &z testem lekooporności \\
+\hline \multicolumn{3}{|c|}{Oddział OIOM} \\ \hline
+wspólnie &6043 &3546 \\
+1992 &1649 &893 \\
+1993 &1210 &785 \\
+1994 &1297 &843 \\
+1995 &1447 &778 \\
+1996 &440 &247 \\
+\hline \multicolumn{3}{|c|}{Oddział NACZ} \\ \hline
+wspólnie &428 &304 \\
+1992 &160 &99 \\
+1993 &123 &97 \\
+1994 &51 &50 \\
+1995 &79 &49 \\
+1996 &15 &9 \\
+\hline \multicolumn{3}{|c|}{Oddział URAZ} \\ \hline
+wspólnie &1171 &683 \\
+1992 &308 &139 \\
+1993 &191 &144 \\
+1994 &231 &174 \\
+1995 &356 &176 \\
+1996 &85 &50 \\
+\hline \multicolumn{3}{|c|}{Oddział WEWN} \\ \hline
+wspólnie &1848 &623 \\
+1992 &822 &232 \\
+1993 &251 &108 \\
+1994 &293 &118 \\
+1995 &401 &127 \\
+1996 &81 &38 \\
+\hline \multicolumn{3}{|c|}{Oddział CHIR} \\ \hline
+wspólnie &622 &422 \\
+1992 &180 &107 \\
+1993 &87 &74 \\
+1994 &125 &100 \\
+1995 &179 &100 \\
+1996 &51 &41 \\
+\hline \multicolumn{3}{|c|}{Oddział REUM} \\ \hline
+wspólnie &799 &372 \\
+1992 &204 &73 \\
+1993 &160 &88 \\
+1994 &171 &107 \\
+1995 &200 &78 \\
+1996 &64 &26 \\
+
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h]
+\begin{center}
+\caption{"Wykaz badań dla poszczególnych oddziałów c.d."}
+\begin{tabular}{c|c|c}
+\hline
+Rok badań & Ilość badań & Ilość badań \\
+& z przynajmniej jednym drobnoustrojem &z testem lekooporności \\
+
+\hline \multicolumn{3}{|c|}{Oddział NEFR} \\ \hline
+wspólnie &2039 &789 \\
+1992 &511 &125 \\
+1993 &343 &151 \\
+1994 &312 &193 \\
+1995 &693 &241 \\
+1996 &180 &79 \\
+\hline \multicolumn{3}{|c|}{Oddział UROL} \\ \hline
+wspólnie &552 &320 \\
+1992 &178 &83 \\
+1993 &123 &87 \\
+1994 &85 &59 \\
+1995 &130 &65 \\
+1996 &36 &26 \\
+\hline \multicolumn{3}{|c|}{Oddział NECH} \\ \hline
+wspólnie &649 &390 \\
+1992 &195 &98 \\
+1993 &117 &97 \\
+1994 &122 &89 \\
+1995 &148 &75 \\
+1996 &67 &31 \\
+\hline \multicolumn{3}{|c|}{Oddział NEUR} \\ \hline
+wspólnie &681 &392 \\
+1992 &290 &133 \\
+1993 &161 &119 \\
+1994 &85 &68 \\
+1995 &105 &53 \\
+1996 &40 &19 \\
+
+
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h]
+\begin{center}
+\caption{"Wykaz badań dla poszczególnych oddziałów c.d. "}
+\begin{tabular}{c|c|c}
+\hline
+Rok badań & Ilość badań & Ilość badań \\
+& z przynajmniej jednym drobnoustrojem &z testem lekooporności \\
+
+\hline \multicolumn{3}{|c|}{Oddział USPR} \\ \hline
+wspólnie &846 &555 \\
+1992 &180 &103 \\
+1993 &95 &70 \\
+1994 &200 &139 \\
+1995 &264 &174 \\
+1996 &107 &69 \\
+\hline \multicolumn{3}{|c|}{Oddział PLAS} \\ \hline
+wspólnie &381 &286 \\
+1992 &141 &95 \\
+1993 &81 &66 \\
+1994 &57 &51 \\
+1995 &83 &59 \\
+1996 &19 &15 \\
+\hline \multicolumn{3}{|c|}{Oddział OKUL} \\ \hline
+wspólnie &204 &101 \\
+1992 &50 &17 \\
+1993 &23 &10 \\
+1994 &20 &14 \\
+1995 &81 &40 \\
+1996 &30 &20 \\
+\hline \multicolumn{3}{|c|}{Oddział LARY} \\ \hline
+wspólnie &605 &407 \\
+1992 &214 &122 \\
+1993 &110 &80 \\
+1994 &103 &93 \\
+1995 &140 &84 \\
+1996 &38 &28 \\
+\hline \multicolumn{3}{|c|}{Oddział SZCZ} \\ \hline
+wspólnie &153 &95 \\
+1992 &36 &17 \\
+1993 &31 &20 \\
+1994 &38 &25 \\
+1995 &41 &27 \\
+1996 &7 &6 \\
+
+\end{tabular}
+\end{center}
+\end{table}
 
 \end{document}
