@@ -67,8 +67,8 @@ Dane główne:
 \caption{Główne informacje o bazie danych}
 \begin{tabular}{cc}
 \hline
-Liczba pacjętów w bazie: & 6861 \\
-liczba badń w bazie: & 17198 \\
+Liczba pacjentów w bazie: & 6861 \\
+liczba badań w bazie: & 17198 \\
 liczba odnalezionych rodzajów & 15553 \\
 Liczba wykonanych badań oporności & 136286  \\
 \hline
@@ -78,12 +78,12 @@ Liczba wykonanych badań oporności & 136286  \\
 
 Wykonano wstępną obróbkę danych:
 \begin{itemize}
-  \item Uwzględniono obecność pacjęta na wielu oddziałach (7),
-  \item usunięto powtórzenia w zapisie pacjętów (2), 
+  \item Uwzględniono obecność pacjenta na wielu oddziałach (7),
+  \item usunięto powtórzenia w zapisie pacjentów (2), 
   \item usunięto badania o złym zapisie daty,
   \item uwzględniono badania w przedziale 1-1-1992 do 31-3-1996 włącznie.
-  \item usunięto dane drobnoustrojstwa niezwiązanego z żadnym badaniem
-  \item usunięto dane oporność niezwiązane z żadnym drobnoustrojstwem
+  \item usunięto dane drobnoustroju niezwiązanego z żadnym badaniem
+  \item usunięto dane oporność niezwiązane z żadnym Drobnoustrojem
 \end{itemize}
 
 Po przeprowadzeniu tych działań otrzymano zmienioną wielkość tablic:
@@ -93,16 +93,16 @@ Po przeprowadzeniu tych działań otrzymano zmienioną wielkość tablic:
 \begin{tabular}{c|c|c}
 \hline
 Nazwa danych & Nowa ilość & zmiana \\
-Pacjęci & 6852 & 9 \\
+Pacjenci & 6852 & 9 \\
 Badania & 16995  & 203\\
-Drobnoustrojstwa & 15421 & 132\\
+Drobnoustroju & 15421 & 132\\
 Lekooporność & 135220 & 1066 \\
 \hline
 \end{tabular}
 \end{center}
 \end{table}
 
-Na podstawie materiałów (pachwa, sperma) ustalono że w danych pacjęta 1 oznacza mężczyznę a 0 kobietę.
+Na podstawie materiałów (pochwa, sperma) ustalono że w danych pacjenta 1 oznacza mężczyznę a 0 kobietę.
 
 Ustalono że badano jedynie 41 rodzajów materiałów.
 
@@ -110,40 +110,40 @@ Wykryto 178 różnych drobnoustrojów.
 
 Testowano 78 różnych leków.
 
-W 8 polach pacjętów nie podano nazwy oddziału oraz nazwy wydziału są podawane wymiennie z małej i dużej litery.
+W 8 polach pacjentów nie podano nazwy oddziału oraz nazwy wydziału są podawane wymiennie z małej i dużej litery.
 W celu unifikacji wszelkie wydziały z małej litery zapisano w samych dużych literach.
 
-Wyniki z wstempnego szacowania umieszczono w tabelach poniżej.
+Wyniki z wstępnego szacowania umieszczono w tabelach poniżej.
 
 \begin{table}[h]
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline
-Typ pacjętów &  co najmniej jedno badanie  & co najmniej jeden drobnoustrój \\
+Typ pacjentów &  co najmniej jedno badanie  & co najmniej jeden drobnoustrój \\
 \hline
 Wszyscy & 6746 &5189\\
 kobiety  & 3165  & 2428\\
-Mężczyżni & 3581 & 2761\\ \hline
+Mężczyźni & 3581 & 2761\\ \hline
 \multicolumn{3}{|c|}{Rok 1992} \\ \hline
 Wszyscy & 2150 &1599\\
 kobiety  & 958  & 698\\
-Mężczyżni & 1192 & 901\\ \hline
+Mężczyźni & 1192 & 901\\ \hline
 \multicolumn{3}{|c|}{Rok 1993} \\ \hline
 Wszyscy & 1367 &1282\\
 kobiety  & 690  & 630\\
-Mężczyżni & 677 & 652\\ \hline
+Mężczyźni & 677 & 652\\ \hline
 \multicolumn{3}{|c|}{Rok 1994} \\ \hline
 Wszyscy & 1350 &1173\\
 kobiety  & 646  & 563\\
-Mężczyżni & 704 & 610\\ \hline
+Mężczyźni & 704 & 610\\ \hline
 \multicolumn{3}{|c|}{Rok 1995} \\ \hline
 Wszyscy & 1864 &1254\\
 kobiety  & 888  & 613\\
-Mężczyżni & 976 & 641\\ \hline
+Mężczyźni & 976 & 641\\ \hline
 \multicolumn{3}{|c|}{Rok 1996} \\ \hline
 Wszyscy & 559 &405\\
 kobiety  & 258  & 191\\
-Mężczyżni & 301 & 214\\ \hline
+Mężczyźni & 301 & 214\\ \hline
 \hline
 \end{tabular}
 \end{center}
@@ -311,6 +311,6 @@ wspólnie &153 &95 \\
 \end{center}
 \end{table}
 
-Wszelkie analizy wykonane zostały przy zastosowaniu języka programowania python oraz biblioteki pandas.
+Wszelkie analizy wykonane zostały przy zastosowaniu języka programowania Python oraz biblioteki Pandas.
 
 \end{document}
