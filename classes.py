@@ -6,7 +6,7 @@ class DrugSusceptibility:
 
     def __init__(self, id, bakteria_type, sus):
         self.DrugId = id
-        self.bacteriaId = bakteria_type
+        self.bacteriaId = bakteria_type #tu jest kod leku niestety i fuk up
         self.Susceptibility = sus
     
 
