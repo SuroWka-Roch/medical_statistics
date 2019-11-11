@@ -173,3 +173,29 @@ def grup4_4(ppl,time_min=datetime.date(1000,1,1), time_max=datetime.date(2200,1,
                     if lek_naj in flat_list and lek_dru in flat_list:
                         liczba+=1
     return liczba
+
+def grup5(ppl):
+    sło = {}
+    for p in ppl:
+        for t in p.test:
+            if t.materialId == mocz:    
+                if naj_bak in [bacteria.idType for bacteria in t.Bacteria]:
+                    for b in t.Bacteria:
+                        try:
+                            sło[b.idType]=sło[b.idType]+1
+                        except KeyError as e:
+                            sło[b.idType]=1
+    return sło
+
+def grup5_2(ppl,time_min=datetime.date(1000,1,1), time_max=datetime.date(2200,1,1)):
+    liczba = 0
+    bak_naj = 18 
+    bak_dru = 1
+    for p in ppl:
+        for t in p.test:
+            if  time_min<t.date and time_max >t.date:
+                if t.materialId == mocz:
+                    bak_id_list = [bakteria.idType for bakteria in t.Bacteria]
+                    if bak_naj in bak_id_list and bak_dru in bak_id_list:
+                        liczba+=1
+    return liczba
