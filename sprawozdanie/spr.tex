@@ -3,6 +3,8 @@
 %\usepackage[T1]{polski}
 \usepackage{helvet}
 \usepackage{graphicx}
+\usepackage{float}
+
 \usepackage{color}
 \usepackage{geometry}
 \usepackage[T1]{fontenc}
@@ -52,19 +54,19 @@
 \begin{tabular}{|c|c|l|l|l|l|}
 \hline
 
-\begin{tabular}[c]{@{}c@{}}Wydział: FiIS\\ Kierunek: FM\end{tabular} & \begin{tabular}[c]{@{}c@{}}Rok: II\\ Zespół: ?\end{tabular} & \multicolumn{4}{l|}{\begin{tabular}[c]{@{}l@{}}Zofia Pieńkowska \\ Wojciech Surówka\end{tabular}} \\ \hline
+\begin{tabular}[c]{@{}c@{}}Wydział: FiIS\\ Kierunek: FM\end{tabular} & \begin{tabular}[c]{@{}c@{}}Rok: II\\ Zespół: 2\end{tabular} & \multicolumn{4}{l|}{\begin{tabular}[c]{@{}l@{}}Zofia Pieńkowska \\ Wojciech Surówka\end{tabular}} \\ \hline
 
-\textbf{\begin{tabular}[c]{@{}c@{}}Statystyka medyczna\end{tabular}} & \multicolumn{5}{l|}{\begin{tabular}[c]{@{}l@{}}Temat:Promieniowanie niejonizujące sieci komórkowej\end{tabular}} \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}} \end{tabular}} & \multicolumn{5}{l|}{\begin{tabular}[c]{@{}l@{}}Temat:Statystyka w Medycynie: projekt cz. 1\end{tabular}} \\ \hline
 
-\begin{tabular}[c]{@{}c@{}}Data wykonania:\\ 1.11.2019 r.\end{tabular} & \begin{tabular}[c]{@{}c@{}}Data oddania:\\ 1.11.2019 r.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Zwrot do poprawy:\\\end{tabular} & \begin{tabular}[ct]{@{}l@{}}Data oddania poprawy:\\\end{tabular} & \begin{tabular}[cT]{@{}l@{}}Data zaliczenia:\\\end{tabular} & \begin{tabular}[cT]{@{}l@{}}Ocena:\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}c@{}}Data wykonania:\\ 1.11.2019 r.\end{tabular} & \begin{tabular}[c]{@{}c@{}}Data oddania:\\ 14.11.2019 r.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Zwrot do poprawy:\\\end{tabular} & \begin{tabular}[ct]{@{}l@{}}Data oddania poprawy:\\\end{tabular} & \begin{tabular}[cT]{@{}l@{}}Data zaliczenia:\\\end{tabular} & \begin{tabular}[cT]{@{}l@{}}Ocena:\end{tabular} \\ \hline
 
 \end{tabular}}
 \end{table}
 
-\section{Temat Wspólny}
+\section{Temat wspólny}
 
 Dane główne:
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \caption{Główne informacje o bazie danych}
 \begin{tabular}{cc}
@@ -83,16 +85,16 @@ Wykonano wstępną obróbkę danych:
 \begin{itemize}
   \item Uwzględniono obecność pacjenta na wielu oddziałach (7),
   \item usunięto powtórzenia w zapisie pacjentów (2), 
-  \item usunięto badania o złym zapisie daty,
-  \item uwzględniono badania w przedziale 1-1-1992 do 31-3-1996 włącznie.
-  \item usunięto dane drobnoustroju niezwiązanego z żadnym badaniem
-  \item usunięto dane oporność niezwiązane z żadnym Drobnoustrojem
+  \item usunięto badania o błędnym zapisie daty,
+  \item uwzględniono badania w przedziale 1-1-1992 do 31-3-1996 włącznie,
+  \item usunięto dane drobnoustroju niezwiązanego z żadnym badaniem,
+  \item usunięto dane oporność niezwiązane z żadnym drobnoustrojem.
 \end{itemize}
 
 Po przeprowadzeniu tych działań otrzymano zmienioną wielkość tablic:
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
-\caption{Zmiany wielkości danych po wstępnej filtracji}
+\caption{Zmiany wielkości danych po wstępnej analizie}
 \begin{tabular}{c|c|c}
 \hline
 Nazwa danych & Nowa ilość & zmiana \\
@@ -105,24 +107,19 @@ Lekooporność & 135220 & 1066 \\
 \end{center}
 \end{table}
 
-Na podstawie materiałów (pochwa, sperma) ustalono że w danych pacjenta 1 oznacza mężczyznę a 0 kobietę.
+Na podstawie materiałów (wymaz z pochwy lub sperma) ustalono, że w danych pacjenta liczba 1 oznacza mężczyznę, a 0 kobietę.
 
-Ustalono że badano jedynie 41 rodzajów materiałów.
+Ustalono, że badano jedynie 41 rodzajów materiałów. Wykryto 178 różnych drobnoustrojów. Testowano 78 różnych leków. W 8 przypadkach nie podano nazwy oddziału, ponadto nazwy wydziałów są podawane zamiennie z małej i wielkiej litery.
+W celu unifikacji wszystkie wydziały, których nazwę podano z małej litery, zapisano wielkimi literami.
 
-Wykryto 178 różnych drobnoustrojów.
+Wyniki wstępnego szacowania umieszczono w tabelach poniżej.
 
-Testowano 78 różnych leków.
-
-W 8 polach pacjentów nie podano nazwy oddziału oraz nazwy wydziału są podawane wymiennie z małej i dużej litery.
-W celu unifikacji wszelkie wydziały z małej litery zapisano w samych dużych literach.
-
-Wyniki z wstępnego szacowania umieszczono w tabelach poniżej.
-
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
+\caption{Wstępnie oszacowane dane.}
 \begin{tabular}{|c|c|c|}
 \hline
-Typ pacjentów &  co najmniej jedno badanie  & co najmniej jeden drobnoustrój \\
+Typ pacjentów &  co najmniej jedno badanie & co najmniej jeden drobnoustrój \\
 \hline
 Wszyscy & 6746 &5189\\
 kobiety  & 3165  & 2428\\
@@ -152,9 +149,9 @@ Mężczyźni & 301 & 214\\ \hline
 \end{center}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
-\caption{"Wykaz badań dla wszystkich oddziałów"}
+\caption{Wykaz badań dla wszystkich oddziałów}
 \begin{tabular}{c|c|c}
 \hline
 Rok badań & Ilość badań & Ilość badań \\
@@ -169,9 +166,9 @@ Rok badań & Ilość badań & Ilość badań \\
 \end{center}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
-\caption{"Wykaz badań dla poszczególnych oddziałów"}
+\caption{Wykaz badań dla poszczególnych oddziałów}
 \begin{tabular}{c|c|c}
 \hline
 Rok badań & Ilość badań & Ilość badań \\
@@ -224,9 +221,9 @@ wspólnie &799 &372 \\
 \end{center}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
-\caption{"Wykaz badań dla poszczególnych oddziałów c.d."}
+\caption{Wykaz badań dla poszczególnych oddziałów c.d.}
 \begin{tabular}{c|c|c}
 \hline
 Rok badań & Ilość badań & Ilość badań \\
@@ -266,9 +263,9 @@ wspólnie &681 &392 \\
 \end{center}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
-\caption{"Wykaz badań dla poszczególnych oddziałów c.d. "}
+\caption{Wykaz badań dla poszczególnych oddziałów c.d.}
 \begin{tabular}{c|c|c}
 \hline
 Rok badań & Ilość badań & Ilość badań \\
@@ -314,14 +311,15 @@ wspólnie &153 &95 \\
 \end{center}
 \end{table}
 
+\newpage
 \section{Temat indywidualny}
 
-\begin{table}[h]
+\begin{table}[H]
   \begin{center}
-  \caption{Wykaz badań dla materiału mocz w rozbiciu na płeć}
+  \caption{Wykaz badań dla materiału mocz z podziałem na płeć}
   \begin{tabular}{|c|c|c|c|}
   \hline
-  &Ilość materiał mocz & Mocz + Drobnoustrój & Lekooporność na moczu \\ \hline
+  &Ilość materiału: mocz & Mocz + Drobnoustrój & Lekooporność \\ \hline
   Wspólnie &5945 &3698 &3496\\ \hline
 Mężczyźni &2879 &1738 &1719\\ \hline
 Kobiety &3066 &1960 &1777\\ \hline
@@ -329,12 +327,12 @@ Kobiety &3066 &1960 &1777\\ \hline
 \end{center}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
   \begin{center}
   \caption{Wykaz badań dla materiału mocz dla lat 1992-1996}
   \begin{tabular}{|c|c|c|c|}
   \hline
-  Rok & Ilość materiał mocz & Mocz + Drobnoustrój & Lekooporność na moczu \\ \hline 
+  Rok & Ilość materiału: mocz & Mocz + Drobnoustrój & Lekooporność \\ \hline 
   
 \multicolumn{4}{|c|}{Wspólnie} \\ \hline
 1992 &1718 &914 &805\\ \hline
@@ -365,7 +363,7 @@ Kobiety &3066 &1960 &1777\\ \hline
 \end{table}
 
 
-Określono ilość badań na materiale mocz:
+Określono liczbę badań na materiale mocz:
 \begin{itemize}
 \item OIOM:1321
 \item NACZ:66
@@ -383,11 +381,9 @@ Określono ilość badań na materiale mocz:
 \item LARY:40
 \item SZCZ:30
 \end{itemize}
-Na podstawie powyższej listy można stwierdzić że najczęściej badano mocz na wydziale
- Nefrologii, co wydaje się być logiczne. 
-Drugim w kolejności jest OIOM co prawdopodobnie wynika z dostępności moczu w przypadku badań zatruć.  
+Na podstawie powyższej listy można wyciągnąć zgodny z intuicją wniosek, że najczęściej badano mocz na wydziale Nefrologii. Drugi w kolejności jest OIOM, co może wynikać z dostępności moczu w przypadku badań zatruć.  
 
-\begin{table}[h]
+\begin{table}[H]
   \begin{center}
   \caption{"Ilość badań dla materiału mocz dla lat 1992-1996 dla oddziału Nefrologii"}
   \begin{tabular}{|c|c|c|c|}
@@ -403,22 +399,22 @@ Drugim w kolejności jest OIOM co prawdopodobnie wynika z dostępności moczu w 
 \end{table}
 
 
-Odnaleziono najczęściej spotykane drobnoustroje w materiale mocz 4 najczęstsze w kolejności to:
+Odnaleziono najczęściej spotykane drobnoustroje w moczu. 4 najczęstsze w kolejności to:
 \begin{itemize}
-\item escherichia coli 1 - 1115 wystąpień
-\item proteus mirabilis - 432 wystąpień
-\item enterococcus faecalis 1 - 332 wystąpień
-\item pseudomonas aeruginosa - 294 wystąpienia
+\item Escherichia coli 1 - 1115 wystąpień
+\item Proteus mirabilis - 432 wystąpień
+\item Enterococcus faecalis 1 - 332 wystąpień
+\item Pseudomonas aeruginosa - 294 wystąpienia
 \end{itemize}
 
-Następnie przeprowadzono analizę dla dwóch pierwszych z podziałem na lata i płeć.
+Następnie przeprowadzono analizę dla dwóch pierwszych drobnoustrojów z podziałem na lata i płeć.
 
-\begin{table}[h]
+\begin{table}[H]
   \begin{center}
-  \caption{"Liczba badań dla materiału mocz dla szczególnych drobnoustrojów w wymiarze lat"}
+  \caption{Liczba badań dla materiału mocz: dla szczególnych drobnoustrojówz podziałem na lata}
   \begin{tabular}{|c|c|c|c|}
     \hline
-    \multicolumn{4}{|c|}{escherichia coli 1} \\ 
+    \multicolumn{4}{|c|}{Escherichia coli 1} \\ 
     \hline Rok &Wspólnie & Kobiety & Mężczyźni \\ \hline
     Każdy& 1110& 823& 287 \\ \hline 
     1992& 247& 169& 78 \\ \hline
@@ -427,7 +423,7 @@ Następnie przeprowadzono analizę dla dwóch pierwszych z podziałem na lata i 
     1995& 277& 199& 78 \\ \hline
     1996& 78& 62& 16 \\ \hline
 
-    \multicolumn{4}{|c|}{proteus mirabilis} \\ \hline
+    \multicolumn{4}{|c|}{Proteus mirabilis} \\ \hline
     Rok &Wspólnie & Kobiety & Mężczyźni \\ \hline
     Każdy& 432& 228& 204 \\ \hline 
     1992& 103& 60& 43 \\ \hline
@@ -439,7 +435,8 @@ Następnie przeprowadzono analizę dla dwóch pierwszych z podziałem na lata i 
 \end{center}
 \end{table}
 
-Znaleziono najczęściej testowane leki najczęstsze cztery znajdują się w następującej liście:
+\newpage
+Znaleziono najczęściej testowane leki – cztery najczęstsze to:
 \begin{itemize}
   \item gentamycin : 1149
   \item ampicillin : 1120
@@ -449,7 +446,7 @@ Znaleziono najczęściej testowane leki najczęstsze cztery znajdują się w nas
 
 \begin{table}[h]
   \begin{center}
-  \caption{"Wykaz badań dla materiału mocz dla lat 1992-1996 względem używanych leków"}
+  \caption{Wykaz badań dla materiału mocz dla lat 1992-1996 względem używanych leków}
   \begin{tabular}{|c|c|c|c|}
     \hline
     \multicolumn{4}{|c|}{gentamycin} \\ 
@@ -472,14 +469,14 @@ Każdy& 744& 563& 181 \\ \hline
 \end{center}
 \end{table}
 
-Najczęściej testowana para dla materiału mocz i najpopularniejszego drobnoustroju to gentamycin z ampicillin razem wystąpiły 911 razy,
- następne w kolejności jest augmentin z gentamycin. Na trzecim miejscu gentamycin z carbenicillin 2.5.
-Do następujących rozważań bierzemy połączenie numerów id 12 z 27 to znaczy gentamycin wraz z ampicillin.
+Najczęściej testowana para dla materiału mocz i najpopularniejszego drobnoustroju to gentamycin z ampicillin – razem wystąpiły 911 razy;
+ następne w kolejności jest augmentin z gentamycin; na trzecim miejscu gentamycin z carbenicillin 2.5.
+Kolejne wnioski wyprowadzone są dla połączenia numerów id 12 i 27 (gentamycin z ampicillin).
 
 
 \begin{table}[h]
   \begin{center}
-  \caption{"Ilość badań dla najpopularniejszego połączenia leków w wykazie lat"}
+  \caption{Ilość badań dla najpopularniejszego połączenia leków w wykazie lat}
   \begin{tabular}{|c|c|c|c|}
 \hline Rok &Wspólnie & Kobiety & Mężczyźni \\ \hline
 Każdy& 581& 434& 147 \\ \hline 
@@ -493,14 +490,13 @@ Każdy& 581& 434& 147 \\ \hline
 \end{center}
 \end{table}
 
-Najczęściej spotykany drobnoustrój wraz z drobnoustrojem escherichia coli 1 to proteus mirabilis.
-Ta kombinacja pojawiła się 66 razy.
+Drobnoustrój najczęściej spotykany razem z Escherichia coli 1 to Proteus mirabilis – ta kombinacja pojawiła się 66 razy.
 
 
 
-\begin{table}[h]
+\begin{table}[H]
   \begin{center}
-  \caption{"Wykaz badań dla materiału mocz dla najpopularniejszej kombinacji bakterii dla lat 1992-1996"}
+  \caption{Wykaz badań dla materiału mocz dla najpopularniejszej kombinacji bakterii dla lat 1992-1996}
   \begin{tabular}{|c|c|c|c|}
     \hline Rok &Wspólnie & Kobiety & Mężczyźni \\ \hline
     Każdy& 66& 43& 23 \\ \hline 
@@ -514,9 +510,9 @@ Ta kombinacja pojawiła się 66 razy.
 \end{center}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
   \begin{center}
-  \caption{"Wykaz badań dla materiału mocz dla najpopularniejszej kombinacji bakterie dla oddziału nefrologi dla lat 1992-1996"}
+  \caption{Wykaz badań dla materiału mocz dla najpopularniejszej kombinacji bakterie dla oddziału nefrologii dla lat 1992-1996}
   \begin{tabular}{|c|c|c|c|}
     \hline Rok &Wspólnie & Kobiety & Mężczyźni \\ \hline
 Każdy& 10& 7& 3 \\ \hline 
