@@ -83,12 +83,12 @@ Wszelkie analizy wykonane zostały przy zastosowaniu języka programowania Pytho
 
 Wykonano wstępną obróbkę danych:
 \begin{itemize}
-  \item Uwzględniono obecność pacjenta na wielu oddziałach (7),
+  \item Uwzględniono obecność pacjenta na wielu oddziałach (7), Są to pacjenci obecji którzy byli testowani na wielu oddziałach jednocześnie. 
   \item usunięto powtórzenia w zapisie pacjentów (2), 
-  \item usunięto badania o błędnym zapisie daty,
+  \item usunięto badania o błędnym zapisie daty (6),
   \item uwzględniono badania w przedziale 1-1-1992 do 31-3-1996 włącznie,
   \item usunięto dane drobnoustroju niezwiązanego z żadnym badaniem,
-  \item usunięto dane oporność niezwiązane z żadnym drobnoustrojem.
+  \item usunięto dane oporności niezwiązane z żadnym drobnoustrojem.
 \end{itemize}
 
 Po przeprowadzeniu tych działań otrzymano zmienioną wielkość tablic:
@@ -107,16 +107,17 @@ Lekooporność & 135220 & 1066 \\
 \end{center}
 \end{table}
 
-Na podstawie materiałów (wymaz z pochwy lub sperma) ustalono, że w danych pacjenta liczba 1 oznacza mężczyznę, a 0 kobietę.
+Na podstawie rodzaju materiału pobranego do badań (wymaz z pochwy lub sperma) ustalono, że w danych pacjenta liczba 1 oznacza mężczyznę, a 0 kobietę.
 
-Ustalono, że badano jedynie 41 rodzajów materiałów. Wykryto 178 różnych drobnoustrojów. Testowano 78 różnych leków. W 8 przypadkach nie podano nazwy oddziału, ponadto nazwy wydziałów są podawane zamiennie z małej i wielkiej litery.
-W celu unifikacji wszystkie wydziały, których nazwę podano z małej litery, zapisano wielkimi literami.
+Ustalono, że badano jedynie 41 rodzajów materiałów. Wykryto 178 różnych drobnoustrojów. Testowano 78 różnych leków.
+W 8 rekordach bazy dacnych pacjętów nie podano nazwy oddziału, ponadto nazwy oddziałów są podawane zamiennie z małej i wielkiej litery.
+W celu unifikacji wszystkie oddziały, których nazwę podano z małej litery, zapisano wielkimi literami.
 
-Wyniki wstępnego szacowania umieszczono w tabelach poniżej.
+Rozbicie liczby badań znajduje się w tabeli poniżej. 
 
 \begin{table}[H]
 \begin{center}
-\caption{Wstępnie oszacowane dane.}
+\caption{Liczba pacjętów w rozbiciu na lata oraz płeć}
 \begin{tabular}{|c|c|c|}
 \hline
 Typ pacjentów &  co najmniej jedno badanie & co najmniej jeden drobnoustrój \\
@@ -149,26 +150,62 @@ Mężczyźni & 301 & 214\\ \hline
 \end{center}
 \end{table}
 
+W powyższej tabeli lliczba pacjętów z co najmniej jednym badaniem różni się liczby pacjętów znajdujących się w bazie danych.
+Oznacza to że po przeprowadzonej redukcji danych, (6852-6746) pacjentów nie ma powiązanego żadnego z badań.
+
+Suma liczby pacjętów z co najmniej jednym badaniem po latach jest większa niż liczba pacjętów z co najmniej jednym badaniem co pokazuje że część z pacjętów miało przeprowadzone badania w różnych latach.
+
+\begin{table}[H]
+  \begin{center}
+  \caption{Liczba badań dla wszystkich oddziałów }
+  \begin{tabular}{c|c|c|c}
+  \hline
+  Nazwa grupy & Liczba badań & Liczba badań & Liczba badań\\ 
+              &              & z przynajmniej jednym drobnoustrojem &z testem lekooporności \\ \hline
+              Wspólnie &16995 &10675& 9269 \\
+              Mężczyźni &10295 &6377& 5657 \\
+              Kobiety &6700 &4298& 3612 \\ \hline
+  \end{tabular}
+\end{center}
+\end{table}
+
 \begin{table}[H]
 \begin{center}
-\caption{Wykaz badań dla wszystkich oddziałów}
-\begin{tabular}{c|c|c}
+\caption{Liczba badań dla wszystkich oddziałów w podziale na lata }
+\begin{tabular}{c|c|c|c}
 \hline
-Rok badań & Ilość badań & Ilość badań \\
-& z przynajmniej jednym drobnoustrojem &z testem lekooporności \\
-1992&5106&2327 \\
-1993&3097&1992 \\
-1994&3186&2120 \\
-1995&4346&2126 \\
-1996&1260&704 \\
-\hline
+Rok badań & Liczba badań & Liczba badań & Liczba badań\\ 
+          &              & z przynajmniej jednym drobnoustrojem &z testem lekooporności \\ \hline
+\multicolumn{4}{c}{Wspólnie} \\ \hline
+1992 &5106 &2980& 2327 \\ \hline
+1993 &3097 &2312& 1992 \\ \hline
+1994 &3186 &2250& 2120 \\ \hline
+1995 &4346 &2386& 2126 \\ \hline
+1996 &1260 &747& 704 \\ \hline
+
+
+\multicolumn{4}{c}{Mężczyźni} \\ \hline
+1992 &3243 &1904& 1531 \\ \hline
+1993 &1885 &1387& 1261 \\ \hline
+1994 &1932 &1328& 1257 \\ \hline
+1995 &2534 &1362& 1237 \\ \hline
+1996 &701 &396& 371 \\ \hline
+
+
+\multicolumn{4}{|c|}{Kobiety} \\ \hline
+1992 &1863 &1076& 796 \\ \hline
+1993 &1212 &925& 731 \\ \hline
+1994 &1254 &922& 863 \\ \hline
+1995 &1812 &1024& 889 \\ \hline
+1996 &559 &351& 333 \\ \hline
+
 \end{tabular}
 \end{center}
 \end{table}
 
 \begin{table}[H]
 \begin{center}
-\caption{Wykaz badań dla poszczególnych oddziałów}
+\caption{Liczba badań dla poszczególnych oddziałów w podziale na lata}
 \begin{tabular}{c|c|c}
 \hline
 Rok badań & Ilość badań & Ilość badań \\
@@ -381,7 +418,7 @@ Określono liczbę badań na materiale mocz:
 \item LARY:40
 \item SZCZ:30
 \end{itemize}
-Na podstawie powyższej listy można wyciągnąć zgodny z intuicją wniosek, że najczęściej badano mocz na wydziale Nefrologii. Drugi w kolejności jest OIOM, co może wynikać z dostępności moczu w przypadku badań zatruć.  
+Na podstawie powyższej listy można wyciągnąć zgodny z intuicją wniosek, że najczęściej badano mocz na wydziale Nefrologii. Drugi w kolejności jest OIOM.
 
 \begin{table}[H]
   \begin{center}

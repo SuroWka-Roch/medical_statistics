@@ -38,7 +38,7 @@ def trzeci_akapit(ppl,time_min=datetime.date(1000,1,1), time_max=datetime.date(2
     Biorę:
     listę pacjętów
     Zwracam:
-    (ile jest badań (długość listy),ile jest badań,ilebadań miało lekowrażliwość)
+    (ile jest badań ,ile jest badań z conajmniej jedną bakterią ,ilebadań miało lekowrażliwość)
     """
 
     lenght = 0
@@ -46,13 +46,15 @@ def trzeci_akapit(ppl,time_min=datetime.date(1000,1,1), time_max=datetime.date(2
     ilosc_badan_z_antybiotykami = 0
 
     for p in ppl:
-        if any( t for t in p.test if time_min <= t.date <= time_max):
+        for t in p.test:
+            if time_min <= t.date <= time_max:
                 lenght += 1
 
     for p in ppl:
         for t in p.test:
             if time_min <= t.date <= time_max:
-              ilosc_badan += 1
+                if t.Bacteria:
+                    ilosc_badan += 1
     
     for p in ppl:
         for t in p.test:
